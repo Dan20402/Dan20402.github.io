@@ -6,15 +6,11 @@
 
 (function ($) {
   const customDate = document.querySelector('.date');
-
   const date = new Date();
-
   const day = date.getDate().toString();
   const month = (date.getMonth() + 1).toString();
   const year = date.getFullYear().toString();
-
   const dateToday = `${day} / ${month} / ${year}`;
-
   customDate.innerHTML = dateToday;
 
   var $window = $(window),
